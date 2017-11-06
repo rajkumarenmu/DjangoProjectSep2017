@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <h1>Depatments</h1>
+</head>
+<body>
+
+<ul>
+    {% for department in all_departments %}
+        <li> <a href="/app1/departments/{{department.id}}/">{{department.name}}</a></li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
